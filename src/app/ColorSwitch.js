@@ -2,7 +2,7 @@ export default function ColorSwitch({
     onChangeColor
   }) {
     return (
-      <button>
+      <button onClick={e => {e.stopPropagation(); onChangeColor();}} >
         Cambiar color
       </button>
     );
